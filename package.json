@@ -4,9 +4,6 @@
   "description": "MySQL Server 5.7 for Windows 64-bit",
   "author": "Taylor Goolsby (https://github.com/taylorgoolsby)",
   "license": "GPLv3",
-  "cpu": [
-    "x64"
-  ],
   "keywords": [
     "local",
     "mysql",

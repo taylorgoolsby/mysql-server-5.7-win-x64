@@ -1,12 +1,10 @@
-# MySQL Server 5.7 for Mac OSX x86 64-bit
-
-This is a fork of [mysql-server-5.6-osx-x64](https://github.com/numtel/mysql-server-5.6-osx-x64).
+# MySQL Server 5.7 for Windows 64-bit
 
 ## Using in another js file
 Install and run [MySQL server](http://www.mysql.com) under the current user inside of the application directory.
 
 ```
-npm install mysql-server-5.7-osx-x64
+npm install mysql-server-5.7-win-x64
 ```
 
 Provides function for spawning MySQL server instance with optional configuration settings. Returns [`ChildProcess`](https://nodejs.org/api/child_process.html#child_process_class_childprocess).
@@ -15,7 +13,7 @@ Provides function for spawning MySQL server instance with optional configuration
 * `stop()` method added to returned `ChildProcess` instance to stop the server.
 
 ```javascript
-var startMysql = require('mysql-server-5.6-osx-x64');
+var startMysql = require('mysql-server-5.6-win-x64');
 
 var mysqld = startMysql({ port: 3307 }, {reinitialize: false});
 
@@ -43,7 +41,7 @@ You can run the mysql server in a command line and then access it in a visual da
 
 After you have installed the server using `npm install`, you can run the server by calling this command in your terminal:
 ```
-mysql-server-5.7-osx-x64
+mysql-server-5.7-win-x64
 ```
 
 Now you can connect to your server using the localhost defaults on port 3306.
