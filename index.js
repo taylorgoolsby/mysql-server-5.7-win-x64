@@ -31,13 +31,13 @@ const defaultConfig = {
   // Binary log settings
   server_id               : 1,
   binlog_format           : 'row',
-  log_bin                 : '../../binlog/mysql-bin.log', // relative to datadir
+  log_bin                 : path.resolve(__dirname, '../../binlog/mysql-bin.log').replace(/\\/g, '/'), // relative to datadir
   binlog_checksum         : 'CRC32',
   expire_logs_days        : 10,
   max_binlog_size         : '100M',
   // Settings related to this package's directory structure
   // tmpdir set in server/start.sh
-  basedir                 : './',
+  basedir                 : path.resolve(__dirname, './').replace(/\\/g, '/'),
   datadir                 : path.resolve(__dirname, 'server/data/mysql').replace(/\\/g, '/'),
   // Other settings
   innodb_buffer_pool_size : '128M',
