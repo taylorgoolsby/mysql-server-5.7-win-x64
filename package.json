@@ -1,7 +1,7 @@
 {
-  "name": "mysql-server-5.7-osx-x64",
-  "version": "100.0.6",
-  "description": "MySQL Server 5.7 for Mac OSX x86 64-bit",
+  "name": "mysql-server-5.7-win-x64",
+  "version": "1.0.0",
+  "description": "MySQL Server 5.7 for Windows 64-bit",
   "author": "Taylor Goolsby (https://github.com/taylorgoolsby)",
   "license": "GPLv3",
   "cpu": [
@@ -14,14 +14,14 @@
     "binary",
     "log"
   ],
-  "repository": "https://github.com/taylorgoolsby/mysql-server-5.7-osx-x64",
+  "repository": "https://github.com/taylorgoolsby/mysql-server-5.7-win-x64",
   "scripts": {
     "test": "jest",
-    "mysql-server": "mysql-server-5.7-osx-x64"
+    "mysql-server": "mysql-server-5.7-win-x64"
   },
   "main": "index.js",
   "bin": {
-    "mysql-server-5.7-osx-x64": "run.js"
+    "mysql-server-5.7-win-x64": "run.js"
   },
   "dependencies": {
     "cosmiconfig": "^5.0.6",
