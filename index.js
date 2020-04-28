@@ -43,6 +43,7 @@ const defaultConfig = {
   innodb_buffer_pool_size : '128M',
   expire_logs_days        : '10',
   sql_mode                : 'NO_ENGINE_SUBSTITUTION,STRICT_TRANS_TABLES,NO_ZERO_DATE,NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER',
+  lower_case_table_names  : 2
 }
 
 /*
