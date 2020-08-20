@@ -1,6 +1,6 @@
 {
   "name": "mysql-server-5.7-win-x64",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MySQL Server 5.7 for Windows 64-bit",
   "author": "Taylor Goolsby (https://github.com/taylorgoolsby)",
   "license": "GPLv3",
