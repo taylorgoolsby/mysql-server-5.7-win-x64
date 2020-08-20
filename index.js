@@ -123,7 +123,7 @@ module.exports = function() {
       const ready =
         !!data.toString().match(/MySQL Community Server/);
       const blockedPort = !!data.toString().match(/Do you already have another mysqld server running on port:/)
-      const badPreviousShutdown = !!data.toString().match(/Check that you do not already have another mysqld process using the same InnoDB data or log files./)
+      const badPreviousShutdown = !!data.toString().match(/Check that you do not already have another mysqld process using the same InnoDB data or log files./) || !!data.toString().match(/must be writable/)
 
       if (!promiseDone && badPreviousShutdown) {
         promiseDone = true
